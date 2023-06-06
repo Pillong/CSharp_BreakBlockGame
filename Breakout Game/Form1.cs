@@ -69,7 +69,7 @@ namespace Breakout_Game
             blockArray = new PictureBox[blockCount];
             int a = 0;
             int top = 10;
-            int left = 100;
+            int left = 110;
 
             for (int i = 0; i < blockArray.Length; i++)
             {
@@ -82,7 +82,7 @@ namespace Breakout_Game
                 if (a == 9)
                 {
                     top = top + 30;
-                    left = 100;
+                    left = 110;
                     a = 0;
                 }
 
@@ -167,7 +167,7 @@ namespace Breakout_Game
                 }
             }
 
-            if(score == blockCount)
+            if(score == 56)
             {
                 gameOver();
                 MessageBox.Show("Your Score : " + score + ".\nPress 'Enter' to play Again", "You Win!!");
